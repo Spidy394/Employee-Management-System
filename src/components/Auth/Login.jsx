@@ -5,10 +5,10 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const submitHandler = (e) => {
-    e.preventDefault()
-    
-    setEmail("")
-    setPassword("")
+    e.preventDefault();
+
+    setEmail("");
+    setPassword("");
   };
 
   return (
@@ -22,8 +22,8 @@ const Login = () => {
         >
           <input
             value={email}
-            onChange={(e)=>{
-              setEmail(e.target.value)
+            onChange={(e) => {
+              setEmail(e.target.value);
             }}
             required
             className="text-xl outline-none border-2 border-emerald-600 rounded-full py-3 px-5 bg-transparent placeholder:text-gray-400"
@@ -33,8 +33,8 @@ const Login = () => {
 
           <input
             value={password}
-            onChange={(e)=>{
-              setPassword(e.target.value)
+            onChange={(e) => {
+              setPassword(e.target.value);
             }}
             required
             className="mt-4 text-xl outline-none border-2 border-emerald-600 rounded-full py-3 px-5 bg-transparent placeholder:text-gray-400"
